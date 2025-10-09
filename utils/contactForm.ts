@@ -21,9 +21,9 @@ export const submitContactForm = async (formData: {
     window.location.hostname !== "127.0.0.1";
 
   if (isProduction) {
-    // PRODUCTION: Use Vercel direct email API
+    // PRODUCTION: Use Netlify function
     try {
-      const response = await fetch("/api/send-email", {
+      const response = await fetch("/.netlify/functions/send-email", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
