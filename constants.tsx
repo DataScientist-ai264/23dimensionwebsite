@@ -229,22 +229,22 @@ export const ARTICLES: Article[] = [
 
 export const TEAM_MEMBERS: TeamMember[] = [
   {
-    name: "Eleanor Vance",
+    name: "Bianca",
     role: "Founding Partner, Lead Strategist",
     avatarId: "avatar1",
-    bio: "Eleanor founded 2+3Dimension on the principle that enduring value is built on a foundation of rational ethics. With a background in applied philosophy and enterprise architecture, she specializes in translating abstract strategic goals into concrete, defensible technical roadmaps.",
+    bio: "Bianca founded 2+3Dimension on the principle that enduring value is built on a foundation of rational ethics. With a background in applied philosophy and enterprise architecture, she specializes in translating abstract strategic goals into concrete, defensible technical roadmaps.",
   },
   {
-    name: "Julian Sark",
+    name: "Naren Kharbanda",
     role: "Principal, Technical Architecture",
     avatarId: "avatar2",
-    bio: "Julian is a systems thinker with two decades of experience architecting resilient, scalable platforms. He excels at dissecting complex technical ecosystems to identify foundational risks and opportunities, ensuring that a project's structure can withstand its future ambitions.",
+    bio: "Naren is a systems thinker with nearly three decades of experience architecting resilient, scalable platforms. He excels at dissecting complex technical ecosystems to identify foundational risks and opportunities, ensuring that a project's structure can withstand its future ambitions.",
   },
   {
-    name: "Anya Sharma",
+    name: "Veronica Altheria",
     role: "Advisory Lead, Project Rescue",
     avatarId: "avatar3",
-    bio: "Anya brings clarity and calm to high-stakes situations. Her expertise lies in diagnosing the root causes of project distress—from technical debt to team misalignment—and implementing rigorous, pragmatic plans to guide at-risk initiatives back to stability and success.",
+    bio: "Veronica brings clarity and calm to high-stakes situations. Her expertise lies in diagnosing the root causes of project distress—from technical debt to team misalignment—and implementing rigorous, pragmatic plans to guide at-risk initiatives back to stability and success.",
   },
 ];
 
