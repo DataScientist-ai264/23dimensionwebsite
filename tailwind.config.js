@@ -17,7 +17,7 @@ export default {
       colors: {
         primary: {
           50: "#f8fafc",
-          100: "#f1f5f9", 
+          100: "#f1f5f9",
           900: "#0b1020",
           950: "#0b0f14",
         },
@@ -46,4 +46,4 @@ export default {
     },
   },
   plugins: [],
-}
+};
