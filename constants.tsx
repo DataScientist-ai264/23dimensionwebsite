@@ -127,7 +127,7 @@ export const SERVICES: Service[] = [
     description:
       "We build MVPs and products that balance technical elegance with market reality, ensuring a solid foundation for growth.",
     link: {
-      text: "See Our Portfolio",
+      text: "See Our Experience",
       path: "/portfolio",
     },
   },

@@ -132,12 +132,18 @@ const PortfolioPage: React.FC = () => {
         <FadeIn>
           <div className="text-center mb-16">
             <h1 className="text-[clamp(40px,4.5vw,56px)] font-bold tracking-tight text-text font-serif">
-              Investor-Ready Portfolio
+              Foundation Experience Portfolio
             </h1>
             <p className="mt-6 text-lg leading-8 text-text-secondary max-w-3xl mx-auto">
-              Showcasing our proven track record of delivering innovative
-              solutions that drive measurable results and attract investment.
+              Our advisory approach is grounded in direct experience leading
+              complex initiatives at executive level. These represent the
+              caliber of challenges we've solved and the foundation of expertise
+              we bring to our advisory practice.
             </p>
+            <div className="mt-4 text-sm text-accent-gold font-semibold">
+              Executive Leadership Experience • Now Applied Through Advisory
+              Excellence
+            </div>
           </div>
         </FadeIn>
 
