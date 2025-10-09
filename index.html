@@ -11,56 +11,6 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@700;800&display=swap"
       rel="stylesheet"
     />
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-      tailwind.config = {
-        darkMode: "class",
-        theme: {
-          extend: {
-            fontFamily: {
-              sans: ["Inter", "sans-serif"],
-              serif: ["Playfair Display", "serif"],
-            },
-            colors: {
-              background: "var(--bg-primary)",
-              foreground: "var(--bg-secondary)",
-              surface: "var(--surface)",
-              border: "var(--border)",
-              "border-strong": "var(--border-strong)",
-
-              text: {
-                DEFAULT: "var(--text-primary)",
-                secondary: "var(--text-secondary)",
-              },
-
-              accent: {
-                gold: "var(--accent-gold)",
-                cyan: "var(--accent-cyan)",
-              },
-            },
-            animation: {
-              "fade-in": "fadeIn 0.5s ease-out forwards",
-              "fade-in-up": "fadeInUp 0.5s ease-out forwards",
-              "particle-drift": "drift 60s infinite linear",
-            },
-            keyframes: {
-              fadeIn: {
-                "0%": { opacity: 0 },
-                "100%": { opacity: 1 },
-              },
-              fadeInUp: {
-                "0%": { opacity: 0, transform: "translateY(10px)" },
-                "100%": { opacity: 1, transform: "translateY(0)" },
-              },
-              drift: {
-                "0%": { transform: "translate(0, 0)" },
-                "100%": { transform: "translate(100px, -100px)" },
-              },
-            },
-          },
-        },
-      };
-    </script>
     <style>
       :root {
         --bg-primary: #f8fafc;
