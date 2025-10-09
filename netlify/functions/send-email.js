@@ -79,7 +79,7 @@ exports.handler = async (event, context) => {
       html: `
         <h2>Thank you for reaching out!</h2>
         <p>Hi ${name},</p>
-        <p>We have received your message and will get back to you within 24 hours.</p>
+        <p>We have received your message and will get back to you soon.</p>
         <p>Best regards,<br>2+3Dimension Team</p>
         <hr>
         <p><small>This is an automated response. Please do not reply to this email.</small></p>
