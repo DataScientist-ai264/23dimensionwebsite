@@ -1,29 +1,29 @@
 // Netlify serverless function to send emails directly using Nodemailer
-const nodemailer = require('nodemailer');
+const nodemailer = require("nodemailer");
 
 exports.handler = async (event, context) => {
   // Enable CORS
   const headers = {
-    'Access-Control-Allow-Origin': '*',
-    'Access-Control-Allow-Headers': 'Content-Type',
-    'Access-Control-Allow-Methods': 'GET, POST, OPTIONS',
+    "Access-Control-Allow-Origin": "*",
+    "Access-Control-Allow-Headers": "Content-Type",
+    "Access-Control-Allow-Methods": "GET, POST, OPTIONS",
   };
 
   // Handle preflight OPTIONS request
-  if (event.httpMethod === 'OPTIONS') {
+  if (event.httpMethod === "OPTIONS") {
     return {
       statusCode: 200,
       headers,
-      body: JSON.stringify({ message: 'CORS preflight' }),
+      body: JSON.stringify({ message: "CORS preflight" }),
     };
   }
 
   // Only allow POST requests
-  if (event.httpMethod !== 'POST') {
+  if (event.httpMethod !== "POST") {
     return {
       statusCode: 405,
       headers,
-      body: JSON.stringify({ error: 'Method not allowed' }),
+      body: JSON.stringify({ error: "Method not allowed" }),
     };
   }
 
@@ -35,13 +35,13 @@ exports.handler = async (event, context) => {
       return {
         statusCode: 400,
         headers,
-        body: JSON.stringify({ error: 'Missing required fields' }),
+        body: JSON.stringify({ error: "Missing required fields" }),
       };
     }
 
     // Create transporter using Gmail SMTP
     const transporter = nodemailer.createTransport({
-      service: 'gmail',
+      service: "gmail",
       auth: {
         user: process.env.GMAIL_USER, // your-email@gmail.com
         pass: process.env.GMAIL_APP_PASSWORD, // Gmail App Password
@@ -57,7 +57,7 @@ exports.handler = async (event, context) => {
         <h2>New Contact Form Submission</h2>
         <p><strong>Name:</strong> ${name}</p>
         <p><strong>Email:</strong> ${email}</p>
-        <p><strong>Organization:</strong> ${organization || 'Not provided'}</p>
+        <p><strong>Organization:</strong> ${organization || "Not provided"}</p>
         <p><strong>Message:</strong></p>
         <p style="background: #f5f5f5; padding: 10px; border-radius: 5px;">${message}</p>
         <hr>
@@ -75,7 +75,7 @@ exports.handler = async (event, context) => {
     const autoReply = {
       from: process.env.GMAIL_USER,
       to: email,
-      subject: 'Thank you for contacting 2+3Dimension',
+      subject: "Thank you for contacting 2+3Dimension",
       html: `
         <h2>Thank you for reaching out!</h2>
         <p>Hi ${name},</p>
@@ -91,20 +91,20 @@ exports.handler = async (event, context) => {
     return {
       statusCode: 200,
       headers,
-      body: JSON.stringify({ 
-        success: true, 
-        message: 'Email sent successfully',
+      body: JSON.stringify({
+        success: true,
+        message: "Email sent successfully",
       }),
     };
-
   } catch (error) {
-    console.error('Email sending error:', error);
+    console.error("Email sending error:", error);
     return {
       statusCode: 500,
       headers,
-      body: JSON.stringify({ 
-        error: 'Failed to send email',
-        details: process.env.NODE_ENV === 'development' ? error.message : undefined
+      body: JSON.stringify({
+        error: "Failed to send email",
+        details:
+          process.env.NODE_ENV === "development" ? error.message : undefined,
       }),
     };
   }
