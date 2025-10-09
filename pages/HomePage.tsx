@@ -133,19 +133,31 @@ const HomePage: React.FC = () => {
                 <div className="mt-10 flex flex-col sm:flex-row items-start gap-4">
                   <Link
                     to="/portfolio"
-                    className="w-full sm:w-auto px-8 py-3.5 border border-transparent text-base font-semibold rounded-lg text-background bg-accent-gold hover:bg-accent-gold/90 transition-all duration-300 transform hover:scale-105 shadow-lg shadow-accent-gold/20"
+                    className="w-full sm:w-auto px-8 py-3.5 text-base font-semibold rounded-lg
+                    bg-white/20 dark:bg-white/10 backdrop-blur-md border border-white/30 dark:border-white/20
+                    text-gray-900 dark:text-white hover:bg-white/30 dark:hover:bg-white/20
+                    hover:border-accent-gold/50 transition-all duration-300 transform hover:scale-105 
+                    shadow-lg shadow-black/10 dark:shadow-white/5 hover:shadow-accent-gold/20"
                   >
                     View Our Portfolio
                   </Link>
                   <Link
                     to="/what-we-do"
-                    className="w-full sm:w-auto px-8 py-3.5 border border-border text-base font-semibold rounded-lg text-text-secondary hover:text-text hover:border-accent-cyan transition-colors duration-300"
+                    className="w-full sm:w-auto px-8 py-3.5 text-base font-semibold rounded-lg
+                    bg-white/15 dark:bg-white/8 backdrop-blur-md border border-white/25 dark:border-white/15
+                    text-gray-900 dark:text-white hover:bg-white/25 dark:hover:bg-white/15
+                    hover:border-accent-cyan/50 transition-all duration-300 transform hover:scale-105
+                    shadow-lg shadow-black/10 dark:shadow-white/5 hover:shadow-accent-cyan/20"
                   >
                     Explore Our Advisory
                   </Link>
                   <Link
                     to="/contact"
-                    className="w-full sm:w-auto px-8 py-3.5 border border-border text-base font-semibold rounded-lg text-text-secondary hover:text-text hover:border-accent-cyan transition-colors duration-300"
+                    className="w-full sm:w-auto px-8 py-3.5 text-base font-semibold rounded-lg
+                    bg-white/15 dark:bg-white/8 backdrop-blur-md border border-white/25 dark:border-white/15
+                    text-gray-900 dark:text-white hover:bg-white/25 dark:hover:bg-white/15
+                    hover:border-accent-cyan/50 transition-all duration-300 transform hover:scale-105
+                    shadow-lg shadow-black/10 dark:shadow-white/5 hover:shadow-accent-cyan/20"
                   >
                     Start a Conversation
                   </Link>
