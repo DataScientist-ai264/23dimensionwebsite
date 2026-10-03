@@ -232,13 +232,13 @@ export const TEAM_MEMBERS: TeamMember[] = [
     name: "Bianca",
     role: "Founding Partner, Lead Strategist",
     avatarId: "avatar1",
-    bio: "Bianca founded 2+3Dimension on the principle that enduring value is built on a foundation of rational ethics. With a background in applied philosophy and enterprise architecture, she specializes in translating abstract strategic goals into concrete, defensible technical roadmaps.",
+    bio: "Bianca cofounded 2+3Dimension on the principle that enduring value is built on a foundation of rational ethics. With a background in applied philosophy and enterprise architecture, she specializes in translating abstract strategic goals into concrete, defensible technical roadmaps.",
   },
   {
-    name: "Naren Kharbanda",
-    role: "Principal, Technical Architecture",
+    name: "Narendra Kharbanda",
+    role: "Founder",
     avatarId: "avatar2",
-    bio: "Naren is a systems thinker with nearly three decades of experience architecting resilient, scalable platforms. He excels at dissecting complex technical ecosystems to identify foundational risks and opportunities, ensuring that a project's structure can withstand its future ambitions.",
+    bio: "Narendra is a systems thinker with nearly three decades of experience architecting resilient, scalable platforms. He excels at dissecting complex technical ecosystems to identify foundational risks and opportunities, ensuring that a project's structure can withstand its future ambitions.",
   },
   {
     name: "Veronica Altheria",
